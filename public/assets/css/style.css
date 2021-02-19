@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: lato, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/vegetables.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #eee;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #eee;
+}
+
+.binomeSection {
+    padding: 2rem 5rem;
+    border-radius: 8px;
+    background: rgba(15, 15, 15, 0.6);
+    color: #eee;
+    font-size: 2.5rem;
+}
