@@ -14,11 +14,14 @@
     </header>
 
     <section class="binomeSection">
+
     <?php
 
-    $binomes = ['Team Panais' => ['Bagrat', 'Ben'], 'Team Cardons' => ['Abdul', 'Yang'], 'Team Rutabagas' => ['Jean-Emmanuel', 'Adam'], 'Team Raiforts' => ['Lima', 'Inès'], 'Team Scorsonères' => ['Mathieu', 'Le'], 'Team Salsifis' => ['Aymen', 'Lazare'], 'Team Capucines' => ['Juliette', 'Amina'], 'Team Pissenlits' => ['Ivan', 'Mathias', 'Gabriel'], 'Team Patissons' => ['Ida', 'Laetitia'], 'Team Ocas' => ['Harris', 'Seif'], 'Team Topinambours' => ['Claude', 'Nassim']];
+    $binomes = ['Team Panais' => ['Bagrat', 'Ben'], 'Team Cardons' => ['Abdul', 'Yang'], 'Team Rutabagas' => ['Jean-Emmanuel', 'Adam'], 'Team Raiforts' => ['Lima', 'Inès'], 'Team Scorsonères' => ['Mathieu', 'Le'], 'Team Salsifis' => ['Aymen', 'Lazare'], 'Team Capucines' => ['Juliette', 'Amina'], 'Team Pissenlits' => ['Ivan', 'Mathias', 'Gabriel'], 'Team Patissons' => ['Ida', 'Laetitia'], 'Team Ocas' => ['Harris', 'Seif'], 'Team Topinambours' => ['Claude', 'Thierry', 'Nassim']];
 
     $brands = ['Coca-Cola', 'Nike', 'Chanel', 'Bentley', 'Justin Bridou', 'Prada', 'Logitech', 'Tesla', 'Guiness', 'Victorinox', 'MSI', 'Razer', 'Etnies', 'Vans', 'Timberland', 'Peugeot', 'Disney', 'Paramount', 'Subway', 'Nvidia', 'Evian', 'Samsung', 'Honor', 'Lu', 'Ankama', 'Hachette', 'Netflix', 'Apple', 'Bose', 'Nicolas', 'Superdry'];
+
+    
 
     foreach ($binomes as $binome) {
         $randomBrands = array_rand($brands, 2);
@@ -29,15 +32,17 @@
         echo "<div class=\"binomeContainer\">";
 
         if ($binome[2]) {
-            echo "$team ($binome[0], $binome[1] & $binome[1]) => $firstBrand & $secondBrand";
+            echo "$team ($binome[0], $binome[1] & $binome[2]) => $firstBrand & $secondBrand";
         } else {
-            echo "$team ($binome[0] et $binome[1]) => $firstBrand & $secondBrand";
+            echo "$team ($binome[0] & $binome[1]) => $firstBrand / $secondBrand";
         } 
 
         echo "</div>";  
     }
     ?>
     </section>
+
+    <script src="public/assets/js/main.js"></script>
 </body>
 </html>
 
