@@ -15,12 +15,18 @@ body {
     align-items: center;
 }
 
+.mainWrap {
+    background: rgba(15, 15, 15, 0.6);
+    width: 90%;
+    height: 100vh;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 20vh;
 }
 h1 {
     text-transform: uppercase;
@@ -35,9 +41,46 @@ h2 {
 }
 
 .binomeSection {
+    width: 100%;
     padding: 2rem 5rem;
     border-radius: 8px;
-    background: rgba(15, 15, 15, 0.6);
     color: #eee;
     font-size: 2.5rem;
+}
+
+.binomeContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.binomeContainer .brand {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.binomeContainer .brand__first,
+.binomeContainer .brand__second {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.binomeContainer .binome {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.brandLogo {
+    margin: 0rem 1rem;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    background: url('') center no-repeat;
+    background-size: 100%;
 }
