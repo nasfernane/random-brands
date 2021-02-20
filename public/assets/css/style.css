@@ -58,7 +58,7 @@ h2 {
 .binomeContainer .brand {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 45%;
 }
 
 .binomeContainer .brand__first,
@@ -71,7 +71,7 @@ h2 {
 .binomeContainer .binome {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 55%;
 }
 
 .brandLogo {
